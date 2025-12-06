@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header class="app-header">
+            <div class="logo">Weatherly</div>
+            <div class="search-box">
+                <button class="icon-placeholder">🔍</button>
+                <input type="text" placeholder="Search city...">
+            </div>
+        </header>
+
+        <section class="main-weather">
+            <div class="city-info">
+                <h1>New York, US</h1>
+                <div class="current-temp">1°</div>
+                <div class="weather-desc">Mainly Clear</div>
+                <div class="high-low">H: 4°  L: 0°</div>
+            </div>
+        </section>
+
+        <section class="details-grid">
+            
+            <div class="card">
+                <div class="card-title">WIND SPEED</div>
+                <div class="card-value wind">11.5 <span>km/h</span></div>
+                <div class="card-sub">Moderate Breeze</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">HUMIDITY</div>
+                <div class="card-value humidity">73%</div>
+                <div class="card-sub">Dew Point: 12°</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">FEELS LIKE</div>
+                <div class="card-value feels-like">-3°</div>
+                <div class="card-sub">Actual: 22</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">UV INDEX</div>
+                <div class="card-value">2.65</div>
+                <div class="card-sub">Moderate</div>
+            </div>
+
+             <div class="card wide-card">
+                <div class="card-title">SUNRISE & SUNSET</div>
+                <div class="sun-times">
+                    <div>
+                        <span>Sunrise</span>
+                        <h3>7:03 AM</h3>
+                    </div>
+                    <div>
+                        <span>Sunset</span>
+                        <h3>4:28 PM</h3>
+                    </div>
+                </div>
+                <div class="card-sub">Good lighting for outdoor activities</div>
+            </div>
+
+        </section>
+
+        <section class="forecast-section">
+            <h3>7-Day Forecast</h3>
+            <div class="forecast-row">
+                <div class="forecast-day">
+                    <span>Wed</span>
+                    <div class="icon-placeholder">☁️</div>
+                    <span>4°</span>
+                </div>
+                <div class="forecast-day">
+                    <span>Thu</span>
+                    <div class="icon-placeholder">☀️</div>
+                    <span>3°</span>
+                </div>
+                <div class="forecast-day">
+                    <span>Fri</span>
+                    <div class="icon-placeholder">🌧️</div>
+                    <span>1°</span>
+                </div>
+                <div class="forecast-day">
+                    <span>Sat</span>
+                    <div class="icon-placeholder">❄️</div>
+                    <span>-4°</span>
+                </div>
+                <div class="forecast-day">
+                    <span>Sun</span>
+                    <div class="icon-placeholder">☀️</div>
+                    <span>0°</span>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
