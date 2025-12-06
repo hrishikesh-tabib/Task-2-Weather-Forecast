@@ -164,3 +164,26 @@ body {
     gap: 30px;
     font-size: 1.5rem;
 }
+
+@media (max-width: 1008px) {
+    body, .app-container {
+        height: auto;
+        min-height: 100vh;
+        background-attachment: fixed;   /*This is to ensure that background doesnt repeat wierdly*/
+        background-size: cover;
+        background-repeat: no-repeat;   /*ensures that bg willl cover entire area*/
+    }
+
+    .app-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 470px) {
+    .search-box {
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        max-height: 70px;
+    }
+}
