@@ -5,6 +5,11 @@
     src: url(DMSans-VariableFont_opsz,wght.ttf);
 }
 
+@font-face {
+    font-family: IconLogo;
+    src: url(Awesome.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,8 +27,10 @@ body {
     color: white;
 
     /* 2. Your Gradient Code */
-    background: #020024;
-    background: linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 56%, rgba(0,212,255,1) 100%);
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     
 }
 
@@ -46,8 +53,11 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2.5rem;
+    margin-right: 10px;
+    font-family: IconLogo;
+    letter-spacing: 0.1em;
+    font-weight: 200;
 }
 
 .search-box {
@@ -120,14 +130,39 @@ body {
     background: rgba(255, 255, 255, 0.15); /* The Glass box */
     border-radius: 20px;
     padding: 20px;
-    /* FLEX MAGIC BELOW */
-    flex: 1 1 150px; /* Grow: 1, Shrink: 1, Basis: 150px */
-    /* This makes sure they are all roughly equal width */
     
+    /* FLEX MAGIC */
+    flex: 1 1 150px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 140px;
+
+    /* --- ✨ NEW GLOW UP CODE STARTS HERE ✨ --- */
+    
+    /* 1. The Glass Edge: A thin, semi-transparent white border */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+
+    /* 2. The Static Glow: A soft shadow around the box */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+
+    /* 3. The Blur: Makes the background behind the card look frosty (High-end look) */
+    backdrop-filter: blur(5px); 
+
+    /* 4. Animation: Prepares the card for the hover effect */
+    transition: all 0.3s ease-in-out; 
+}
+
+/* --- ADD THIS NEW BLOCK BELOW .card --- */
+.card:hover {
+    /* Moves the card up slightly to look like it's floating */
+    transform: translateY(-5px); 
+    
+    /* Makes the border brighter */
+    border-color: rgba(255, 255, 255, 0.8); 
+
+    /* The "Light Up" Effect: A strong, bright white glow */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 /* Special class for the Sunrise/Sunset card to be wider */
