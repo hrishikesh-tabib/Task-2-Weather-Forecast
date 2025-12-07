@@ -1,9 +1,0 @@
-body {
-    /* 1. This ensures the background covers the whole screen */
-    min-height: 100vh; 
-    margin: 0; /* Removes default white bars on the edges */
-
-    /* 2. Your Gradient Code */
-    background: #020024;
-    background: linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 56%, rgba(0,212,255,1) 100%);
-}
